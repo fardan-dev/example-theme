@@ -23,7 +23,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     - name: Clone private repo
-      run: git clone "https://oauth2:$EXTERNAL_TOKEN@gitlab.playcourt.id/telkomdev-fardan/legion-ios.git"
+      run: git clone "https://gitlab-ci-token:$EXTERNAL_TOKEN@gitlab.playcourt.id/telkomdev-fardan/legion-ios.git"
       env:
         EXTERNAL_TOKEN : ${{ secrets.EXTERNAL_TOKEN }}
     - name: Print Directory
