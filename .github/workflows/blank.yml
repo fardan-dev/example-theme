@@ -27,6 +27,6 @@ jobs:
       env:
         EXTERNAL_TOKEN : ${{ secrets.EXTERNAL_TOKEN }}
     - name: Print Directory
-      run: ls
+      run: echo ls
       env:
         EXTERNAL_TOKEN : ${{ secrets.EXTERNAL_TOKEN }}
